@@ -6,18 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Test" />
-        <module name="demo" />
+        <module name="aws-pmo-projects-server" />
+        <module name="sas-server" />
         <module name="DSA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="aws-pmo-risk-server" target="1.6" />
+      <module name="aws-pmo-projects-server" target="1.8" />
+      <module name="DSA" target="18" />
+      <module name="sas-server" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
+      <module name="sas-server" options="-parameters" />
     </option>
   </component>
 </project>
